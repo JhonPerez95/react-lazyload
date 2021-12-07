@@ -11,26 +11,26 @@ const NavBar = () => {
             <ul>
                 <li>
                     <NavLink
-                        to="/"
+                        to="/lazy1"
                         className={({ isActive }) => isActived(isActive)}
                     >
-                        Home
+                        lazy1
                     </NavLink>
                 </li>
                 <li>
                     <NavLink
-                        to="/about"
+                        to="/lazy2"
                         className={({ isActive }) => isActived(isActive)}
                     >
-                        About
+                        lazy2
                     </NavLink>
                 </li>
                 <li>
                     <NavLink
-                        to="/users"
+                        to="/lazy3"
                         className={({ isActive }) => isActived(isActive)}
                     >
-                        Users
+                        lazy3
                     </NavLink>
                 </li>
             </ul>
