@@ -1,5 +1,6 @@
 import logo from '../logo.svg'
 import { NavLink } from 'react-router-dom'
+import { routes } from './routes'
 const NavBar = () => {
     const isActived = (isActive: boolean) => {
         return isActive ? 'nav-active' : ''
@@ -9,30 +10,16 @@ const NavBar = () => {
         <nav>
             <img src={logo} alt="React Logo" />
             <ul>
-                <li>
-                    <NavLink
-                        to="/lazy1"
-                        className={({ isActive }) => isActived(isActive)}
-                    >
-                        lazy1
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        to="/lazy2"
-                        className={({ isActive }) => isActived(isActive)}
-                    >
-                        lazy2
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        to="/lazy3"
-                        className={({ isActive }) => isActived(isActive)}
-                    >
-                        lazy3
-                    </NavLink>
-                </li>
+                {routes.map(({ to, name }) => (
+                    <li key={to}>
+                        <NavLink
+                            to={to}
+                            className={({ isActive }) => isActived(isActive)}
+                        >
+                            {name}
+                        </NavLink>
+                    </li>
+                ))}
             </ul>
         </nav>
     )
