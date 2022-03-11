@@ -1,12 +1,11 @@
-import Navigations from './routes/Navigations'
+import { Navigation } from './routes/Navigation';
 
 function App() {
-    return (
-        <>
-            <h1>React App TS</h1>
-            <Navigations />
-        </>
-    )
+  return (
+    <>
+      <Navigation />
+    </>
+  );
 }
 
-export default App
+export default App;
