@@ -35,11 +35,7 @@ export const ShoppingPage = () => {
           <ProductTitle className="text-white" />
           <ProductButtons className="custom-buttons" />
         </ProductCard>
-        <ProductCard product={product} style={{backgroundColor: '#70D1F8'}}>
-          <ProductImage  />
-          <ProductTitle  />
-          <ProductButtons  />
-        </ProductCard>
+   
       </div>
     </div>
   )
