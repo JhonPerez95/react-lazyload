@@ -17,7 +17,7 @@ export interface ProductContextProps {
 
 export interface ProductCardHOCProps {
   ({ children, product }: ProductCardProps): JSX.Element
-  Title: (Props: PropsCardTitle) => JSX.Element
-  Image: (Props: PropsCardImage) => JSX.Element
   Buttons: (Props: PropsCardButtons) => JSX.Element
+  Image: (Props: PropsCardImage) => JSX.Element
+  Title: (Props: PropsCardTitle) => JSX.Element
 }
